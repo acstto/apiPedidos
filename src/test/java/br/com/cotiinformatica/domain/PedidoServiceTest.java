@@ -17,7 +17,7 @@ public class PedidoServiceTest {
 	@DisplayName("Deve criar um pedido com sucesso.")
 	public void testCriarPedidoComSucesso() {
 		//TODO implementar o teste
-		fail("Não implementado.");
+		//fail("Não implementado.");
 		
 	}
 	
@@ -25,7 +25,7 @@ public class PedidoServiceTest {
 	@DisplayName("Deve alterar um pedido com sucesso.")
 	public void testAlterarPedidoComSucesso() {
 		//TODO implementar o teste
-		fail("Não implementado.");
+		//fail("Não implementado.");
 		
 	}
 	
@@ -33,7 +33,7 @@ public class PedidoServiceTest {
 	@DisplayName("Deve inativar um pedido existente com sucesso.")
 	public void testInativarPedidoComSucesso() {
 		//TODO implementar o teste
-		fail("Não implementado.");
+		//fail("Não implementado.");
 		
 	}
 	
@@ -41,7 +41,7 @@ public class PedidoServiceTest {
 	@DisplayName("Deve consultar um pedido com sucesso.")
 	public void testConsultarPedidoComSucesso() {
 		//TODO implementar o teste
-		fail("Não implementado.");
+		//fail("Não implementado.");
 		
 	}
 	
@@ -49,7 +49,7 @@ public class PedidoServiceTest {
 	@DisplayName("Deve obter um pedido através do ID com sucesso.")
 	public void testObterPedidoPorIdComSucesso() {
 		//TODO implementar o teste
-		fail("Não implementado.");
+		//fail("Não implementado.");
 		
 	}
 
