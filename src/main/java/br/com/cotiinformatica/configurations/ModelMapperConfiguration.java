@@ -1,4 +1,4 @@
-package br.com.cotiinformatica.configuration;
+package br.com.cotiinformatica.configurations;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
