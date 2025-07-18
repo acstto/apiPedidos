@@ -1,20 +1,19 @@
-
 services:
  apipedidos: #Nome do serviço
-   container_name: springboot-apiPedidos
+   container_name: springboot-apiPedidos # Nome do container
    build:
-      context: . #Raiz do projeto
-      dockerfile: Dockerfile # Ler o arquivo docerfile
+       context: . # Raiz do projeto
+       dockerfile: Dockerfile # Ler o arquivo dockerfile
    ports:
-    - "8081:8081"     # Porta para comunicação entre aplicações
+       - "8081:8081" # Portas externa (windows) e interna (docker)
    networks:
-    - apiPedidos-network # Nome da rede compartilhada
+       - apiPedidos-network # Nome da rede compartilhada
    depends_on:
-    - postgres #Nome do serviço que precisamos aguardar para executar a API
-    - rabbitmq #Nome do serviço que precisamos aguardar para executar a API
+       - postgres # Nome do serviço que precisamos aguardar para executar a API
+       - rabbitmq # Nome do serviço que precisamos aguardar para executar a API
    environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/pedidosdb
-
+       SPRING_DATASOURCE_URL: jdbc:postgresql://localhost:5434/pedidosdb
+       SPRING_RABBITMQ_HOST: rabbitmq
  postgres: # Nome do serviço
    image: postgres:16 # Imagem oficial do postgresql versão 16
    container_name: postgres-apiPedidos # Nome do container
@@ -46,3 +45,4 @@ networks:
    driver: bridge # Rede compartilhada
 volumes:
  postgres-data: #Registrando o local para armazenamento dos dados
+
